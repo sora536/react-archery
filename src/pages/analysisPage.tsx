@@ -3,7 +3,7 @@ import EditIcon from "@mui/icons-material/Edit";
 import { useState } from "react";
 
 import WidgetRenderer from "../features/analysis/components/widgetRenderer";
-import WidgetEditorDialog from "../features/analysis/components/editor/addWidgetDialog";
+import WidgetEditorDialog from "../features/analysis/components/editor/widgetEditorDialog";
 
 import { loadWidgetConfig } from "../features/analysis/widgetConfigRepository";
 

@@ -14,7 +14,7 @@ import CloseRecordPage from "../features/record/pages/closeRecoedPage";
 
 function RecordPage() {
   const [value, setValue] = useState("1");
-  const handleChange = (e: SyntheticEvent, newValue: string) => {
+  const handleChange = (_: SyntheticEvent, newValue: string) => {
     setValue(newValue);
   };
   const [distance, setDistance] = useState<ShotDistance>("70m");
