@@ -5,29 +5,34 @@ import HistoryPage from "../../pages/historyPage";
 import AnalysisPage from "../../pages/analysisPage";
 import NotFoundPage from "../../pages/notFoundPage";
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Layout />,
+      children: [{ index: true, element: <RecordPage /> }],
+    },
+    {
+      path: "/history",
+      element: <Layout />,
+      children: [{ index: true, element: <HistoryPage /> }],
+    },
+    {
+      path: "/analysis",
+      element: <Layout />,
+      children: [{ index: true, element: <AnalysisPage /> }],
+    },
+    {
+      path: "/morePage",
+      element: <Layout />,
+      children: [{ index: true, element: <NotFoundPage /> }],
+    },
+    {
+      path: "*",
+      element: <NotFoundPage />,
+    },
+  ],
   {
-    path: "/",
-    element: <Layout />,
-    children: [{ index: true, element: <RecordPage /> }],
+    basename: "/archery-app",
   },
-  {
-    path: "/history",
-    element: <Layout />,
-    children: [{ index: true, element: <HistoryPage /> }],
-  },
-  {
-    path: "/analysis",
-    element: <Layout />,
-    children: [{ index: true, element: <AnalysisPage /> }],
-  },
-  {
-    path: "/morePage",
-    element: <Layout />,
-    children: [{ index: true, element: <NotFoundPage /> }],
-  },
-  {
-    path: "*",
-    element: <NotFoundPage />,
-  },
-]);
+);
