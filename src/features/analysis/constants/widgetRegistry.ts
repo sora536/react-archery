@@ -12,8 +12,6 @@ export const widgetDefinitions: WidgetDefinition[] = [
     category: "score",
 
     component: AverageScore,
-
-    defaultEnabled: true,
   },
 ];
 export const widgetDefinitionMap = new Map(

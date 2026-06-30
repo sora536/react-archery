@@ -43,7 +43,6 @@ function WidgetListItem({ config, configs, onChange }: Props) {
       >
         <DragIndicatorIcon />
       </Box>
-
       <ListItemText
         primary={definition.title}
         secondary={definition.description}

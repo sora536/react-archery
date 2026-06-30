@@ -22,9 +22,8 @@ function WidgetRenderer({ configs }: WidgetRendererProps) {
         if (!definition) return null;
 
         const Component = definition.component;
-
         return (
-          <Grid key={definition.id}>
+          <Grid key={definition.id} sx={{ width: "100%" }}>
             <Component />
           </Grid>
         );

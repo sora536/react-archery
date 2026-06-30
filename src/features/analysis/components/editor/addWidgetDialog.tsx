@@ -72,11 +72,11 @@ function AddWidgetDialog({ open, configs, onClose, onChange }: Props) {
             direction="row"
             spacing={1}
             sx={{
-              flexWrap: "wrap",
+              overflowX: "scroll",
             }}
           >
             <Chip
-              label="すべて"
+              label="all"
               clickable
               color={category === "all" ? "primary" : "default"}
               onClick={() => setCategory("all")}
@@ -84,6 +84,7 @@ function AddWidgetDialog({ open, configs, onClose, onChange }: Props) {
 
             {CATEGORIES.map((c) => (
               <Chip
+                icon={c.icon}
                 key={c.id}
                 label={c.title}
                 clickable

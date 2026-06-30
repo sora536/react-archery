@@ -1,11 +1,13 @@
 export const WIDGET_CATEGORIES = [
+  "overview",
   "score",
-  "practice",
+  "trend",
   "goal",
   "technique",
-  "record",
-  "growth",
-  "motivation",
+  "practice",
+  "distance",
+  "tag",
+  "activity",
   "other",
 ] as const;
 

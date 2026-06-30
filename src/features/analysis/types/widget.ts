@@ -35,12 +35,6 @@ export interface WidgetDefinition {
 
   /** Widget本体 */
   component: ComponentType;
-
-  /** Gridサイズ(12分割) */
-  width?: 3 | 4 | 6 | 12;
-
-  /** 初回表示するか */
-  defaultEnabled?: boolean;
 }
 
 /**
